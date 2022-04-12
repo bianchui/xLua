@@ -239,4 +239,4 @@ endif ( )
 
 add_subdirectory(EmmyDebugger/build_script/xlua_emmy_core)
 add_dependencies(xlua emmy_core)
-target_link_libraries(xlua PRIVATE emmy_core)
+#target_link_libraries(xlua PRIVATE emmy_core)
