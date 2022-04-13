@@ -1051,13 +1051,13 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1066,7 +1066,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_core;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1096,15 +1096,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LuaJIT/src",
+					"$(PROJECT_DIR)/build_lj_osx",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 				);
-				INFOPLIST_FILE = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
@@ -1121,7 +1121,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = xlua;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1144,7 +1144,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1174,15 +1174,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LuaJIT/src",
+					"$(PROJECT_DIR)/build_lj_osx",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 				);
-				INFOPLIST_FILE = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1204,7 +1204,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = xlua;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1233,14 +1233,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/emmy_debugger/src",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1253,7 +1253,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_debugger;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1276,7 +1276,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1306,15 +1306,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LuaJIT/src",
+					"$(PROJECT_DIR)/build_lj_osx",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 				);
-				INFOPLIST_FILE = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1336,7 +1336,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = xlua;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1365,14 +1365,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/emmy_debugger/src",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1385,7 +1385,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_debugger;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1411,13 +1411,13 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1427,7 +1427,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_core;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1455,10 +1455,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1478,7 +1478,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv_a;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1506,10 +1506,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1529,7 +1529,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv_a;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1542,7 +1542,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build_lj_osx/prebuilt";
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/build";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/build";
 			};
 			name = MinSizeRel;
 		};
@@ -1569,14 +1569,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/emmy_debugger/src",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1589,7 +1589,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_debugger;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1615,13 +1615,13 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1631,7 +1631,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_core;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1644,7 +1644,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build_lj_osx/prebuilt";
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/build";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/build";
 			};
 			name = RelWithDebInfo;
 		};
@@ -1671,14 +1671,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/emmy_debugger/src",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1688,7 +1688,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_debugger;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1711,7 +1711,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1734,7 +1734,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1757,7 +1757,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1787,15 +1787,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LuaJIT/src",
+					"$(PROJECT_DIR)/build_lj_osx",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 				);
-				INFOPLIST_FILE = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1817,7 +1817,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = xlua;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1845,10 +1845,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1868,7 +1868,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv_a;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1891,7 +1891,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1923,10 +1923,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@rpath";
@@ -1951,7 +1951,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1983,10 +1983,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@rpath";
@@ -2012,7 +2012,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2044,10 +2044,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@rpath";
@@ -2073,7 +2073,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2096,7 +2096,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2119,7 +2119,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2142,7 +2142,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2168,13 +2168,13 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include",
 					"$(inherited)",
-					"/Users/hcm-b0310/Proj/github/LuaJIT/src",
+					"$(PROJECT_DIR)/LuaJIT/src",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -2184,7 +2184,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = emmy_core;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2207,7 +2207,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2239,10 +2239,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@rpath";
@@ -2268,7 +2268,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2281,7 +2281,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build_lj_osx/prebuilt";
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/build";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/build";
 			};
 			name = Debug;
 		};
@@ -2302,7 +2302,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2325,7 +2325,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2338,7 +2338,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build_lj_osx/prebuilt";
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/build";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/build";
 			};
 			name = Release;
 		};
@@ -2364,10 +2364,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include",
-					"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build_lj_osx",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/include",
+					"$(PROJECT_DIR)/EmmyDebugger/third-party/libuv-1.29.0/src",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -2386,7 +2386,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = uv_a;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/";
+				SYMROOT = "$(PROJECT_DIR)/build_lj_osx/";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
