@@ -1,0 +1,1866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5C1735C47639474487F260F8 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B7FF13A43EA444B5808B5EDF /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E174CFDE27F24299B56DF83A /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		7FF19ADF51D94F928E618DC8 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D8424070788F43C5BB67E516 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C320A934C9D30B80BF74A692 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		949412F856EB498B80341E81 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22ADC7FC79274CF790987449 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				849B82F619ACC088F378F3FE /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				8464278B5FFB4A89838DF647 /* PBXTargetDependency */,
+				377A61AF350D4E3C900CE5E1 /* PBXTargetDependency */,
+				0746F11B25554CB4A5C7CA90 /* PBXTargetDependency */,
+				B48F338AD580431D92803CFA /* PBXTargetDependency */,
+				E77BA6F276E049D391266F71 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02E8E936A6674E6FB9058B67 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */ = {isa = PBXBuildFile; fileRef = 67823ABBB3164174A40CCE3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */; };
+		04EBF98FBED14CADAAE69D31 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */ = {isa = PBXBuildFile; fileRef = F062E71C46A847E4B2E4F437 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */; };
+		064E531649BF450EB1526218 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */ = {isa = PBXBuildFile; fileRef = 292E0232D8DE4D68B6EBAAB8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */; };
+		08575029ACA5457FABA5444F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */ = {isa = PBXBuildFile; fileRef = C4DE2E79B27344448FDF7AD6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */; };
+		123B950FAC974C5EA5A2C0AE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/types.h */ = {isa = PBXBuildFile; fileRef = A50E9C78FEE6434FB7F9E3E0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/types.h */; };
+		1393C772B32F4C16B417FD24 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_core/src/emmy_core.cpp */ = {isa = PBXBuildFile; fileRef = 1BFD9F74B6C24C2FAA4E016B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_core/src/emmy_core.cpp */; };
+		1406599BA4C04F7BA826E3C0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */ = {isa = PBXBuildFile; fileRef = 42BB09F2770743CEB61999AC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */; };
+		161CA86270614FF38B14C6F2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */ = {isa = PBXBuildFile; fileRef = A244C359D8C3469F895CBE3D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */; };
+		177C02070D8C4CD0AD3395ED /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */ = {isa = PBXBuildFile; fileRef = 063AFA3A9B894A6AA4928A3A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */; };
+		1FC69F57331F4B428625CD55 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */ = {isa = PBXBuildFile; fileRef = B08A4AD3BD2E4CC4A24EA668 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */; };
+		20A31518F4324EE1996D0EBE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */ = {isa = PBXBuildFile; fileRef = 3C9196F90F99479C9155CA6A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */; };
+		22B8CAB682E046F58F76C327 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */ = {isa = PBXBuildFile; fileRef = 4AA29ED448E14FCD87E848E4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */; };
+		25B981EE5FDD4D9388319A74 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */ = {isa = PBXBuildFile; fileRef = CC4B483FEB7147319564771C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */; };
+		2DC1C7EC005A44719B22F838 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */ = {isa = PBXBuildFile; fileRef = F27028DB67B94CDD9497ECAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */; };
+		316C626913004682B4F58192 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_client_transporter.h */ = {isa = PBXBuildFile; fileRef = 8BAED31B15E64F33AC158176 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_client_transporter.h */; };
+		3793BAE3EBDA490099466898 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */ = {isa = PBXBuildFile; fileRef = 286A1F027D28434BA9FF3D4C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */; };
+		3BDFC73320B74932A934DD3D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/transporter.h */ = {isa = PBXBuildFile; fileRef = 46F31BF543CD413585B3995E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/transporter.h */; };
+		3FB5A4D127154568AECF96C7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */ = {isa = PBXBuildFile; fileRef = FC5307E0F00147238A2D4357 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */; };
+		41DA2A69CC404CA0A785D846 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */ = {isa = PBXBuildFile; fileRef = 33EE42B4925442EFB938371A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */; };
+		43447AFA1317402CA32CCE6E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_server_transporter.h */ = {isa = PBXBuildFile; fileRef = 48854301CC8343FE9E964F14 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_server_transporter.h */; };
+		455BF33384F64C52B04244BF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */ = {isa = PBXBuildFile; fileRef = EB2A52EDF8E747AE86C606CC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */; };
+		4749070C83E24C30BFAC476D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_client_transporter.h */ = {isa = PBXBuildFile; fileRef = E37A19C5A04B4AC0A75B9DA7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_client_transporter.h */; };
+		49D58E6160CF4B8D8C3D2BAE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 155A9DD17912438B9AB2B608 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt */; };
+		49D6E64D4B2044D98E5AE613 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */ = {isa = PBXBuildFile; fileRef = F2D0DDB997D846AF90A1981E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */; };
+		4C4A39D244D845278CFEDB42 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */ = {isa = PBXBuildFile; fileRef = 1349A050181F4CE8A6455A10 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */; };
+		51D543B370C2405AB89FA780 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/lua_version.cpp */ = {isa = PBXBuildFile; fileRef = 0667398C41C84B0B82C7890E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/lua_version.cpp */; };
+		540A3D1EED9F4806A5A97C61 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state/lua_state_jit.cpp */ = {isa = PBXBuildFile; fileRef = A15C9334055C44DEAE2EBDC2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state/lua_state_jit.cpp */; };
+		573F59F2EEFA48AC808CC985 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */ = {isa = PBXBuildFile; fileRef = 96AE63C360EB472CA9A13B34 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */; };
+		57EAB2DFA14E40F780CB885F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */ = {isa = PBXBuildFile; fileRef = 7C64E0C59C534B959D7FA5FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */; };
+		59D975A758D548D2A7C51E13 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */ = {isa = PBXBuildFile; fileRef = A05798D7EB56495BAB1CB51C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */; };
+		5BDD94772CC7471F9F177F94 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger.h */ = {isa = PBXBuildFile; fileRef = 1717AFCA7A4941BD9FF25367 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger.h */; };
+		5E729DCE21804325BD5520AC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_server_transporter.cpp */ = {isa = PBXBuildFile; fileRef = 36846F6C533844BAB0385E6C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_server_transporter.cpp */; };
+		60FDBBB96734460D8B31AC34 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */ = {isa = PBXBuildFile; fileRef = 0997F43D75004AE2877EB549 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */; };
+		617945ECABD746D282817A82 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */ = {isa = PBXBuildFile; fileRef = D5FB1C3177CD4CF4BF74AC6E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */; };
+		62D5334DD2504B5F829B84D3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger_manager.cpp */ = {isa = PBXBuildFile; fileRef = 97DAA9745D394BEFA474BE56 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger_manager.cpp */; };
+		62E19561D066424682A0CFAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state.cpp */ = {isa = PBXBuildFile; fileRef = A8B8FA78337A44F5999C900F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state.cpp */; };
+		685FF1B45AF841A49FA7B5A4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */ = {isa = PBXBuildFile; fileRef = 0D90B64D06864098A7427676 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */; };
+		69EF3B27E9CF4DEF9D9F2CD6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */ = {isa = PBXBuildFile; fileRef = 5D03DFD569DB45BF89D5C44A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */; };
+		6E1938CA97B24BE79E0A98E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/hook_state.h */ = {isa = PBXBuildFile; fileRef = 757829F7B1F240BA8E9344D5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/hook_state.h */; };
+		73BE5B7D47A244BDBFDC3AB0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */ = {isa = PBXBuildFile; fileRef = E36E5F8864EA4AD5959B1891 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */; };
+		76F6474F387D495ABA127D3E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */ = {isa = PBXBuildFile; fileRef = 57F517E50DC14C13BDCB6EE9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */; };
+		771EBCC581E54BF58787E35F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/lua_version.h */ = {isa = PBXBuildFile; fileRef = D3694D0719334B76B719B320 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/lua_version.h */; };
+		78C8725D21574F588F03B428 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */ = {isa = PBXBuildFile; fileRef = 37408A7A6CC040B2AD2D2350 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */; };
+		7B444157EBA14518B250E6FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger.cpp */ = {isa = PBXBuildFile; fileRef = 133D0D3945394C4885FE4A7E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger.cpp */; };
+		7C9428F088F44E02B2CEA6F0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */ = {isa = PBXBuildFile; fileRef = 837356C7D0C7437F80D41BFF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */; };
+		7E7614CB1C794D3582BA7729 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */ = {isa = PBXBuildFile; fileRef = 9BE4A897BB6448CFA78168DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */; };
+		7FF622F090DE45188525D4DD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */ = {isa = PBXBuildFile; fileRef = 61508FE5C2E94D709F9C10A8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */; };
+		84709917D7E74D2981CE425F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */ = {isa = PBXBuildFile; fileRef = CA22EED431C44610BB60EE23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */; };
+		85185921F2E74FADABB667BD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/api/lua_api.h */ = {isa = PBXBuildFile; fileRef = 26832F6ED7EA4AAC8EB5C7FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/api/lua_api.h */; };
+		86BF90010997499A8F90A52A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_facade.cpp */ = {isa = PBXBuildFile; fileRef = 54953EAEA3D7431B9486F49A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_facade.cpp */; };
+		86C5B75C68714B9992575A08 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */ = {isa = PBXBuildFile; fileRef = 52C6AC8245894B41ABAE6A00 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */; };
+		86E39170AB8C48F58C4D85C4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_client_transporter.cpp */ = {isa = PBXBuildFile; fileRef = 129E75C02F654FA9BD3A02DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_client_transporter.cpp */; };
+		899FF8EB20CD47E8A16CA16F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_client_transporter.cpp */ = {isa = PBXBuildFile; fileRef = CD9746AE232748E2B4CF97E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_client_transporter.cpp */; };
+		8A3F69C78D8D468785A578B9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */ = {isa = PBXBuildFile; fileRef = 3E19136DA5E942E68C4E1869 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */; };
+		8FB294E7AA614455B8C4E20E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */ = {isa = PBXBuildFile; fileRef = 6F7D39263A0B4B40B103A0EA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */; };
+		911548195994465A96D3AC9F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */ = {isa = PBXBuildFile; fileRef = 74F4F4992A6E4679BC085AD5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */; };
+		9559102624E8468B9E7423A7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */ = {isa = PBXBuildFile; fileRef = 3CCDFCB596454FFFA1EE04FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */; };
+		9593C270A1FE4848AD4B6998 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */ = {isa = PBXBuildFile; fileRef = A87041689F6A401DA8FEC2E8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */; };
+		9A5D770AE5624BB48BF69489 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */ = {isa = PBXBuildFile; fileRef = 0F3FD42CF9184CE28C28B3AA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */; };
+		A147A5C7777A499FAC10EBE5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */ = {isa = PBXBuildFile; fileRef = 8676F6224557450181712F68 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */; };
+		A346C9044C844F0BB6F21ABF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */ = {isa = PBXBuildFile; fileRef = 26435DAC6110478E94B56A99 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */; };
+		A4530AE16CE54A3E81518EF6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_helper.cpp */ = {isa = PBXBuildFile; fileRef = 048E7C8910F649058A6DC3BF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_helper.cpp */; };
+		A6A0B4BFF4644DDD9C88336B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_helper.h */ = {isa = PBXBuildFile; fileRef = 4F62223CBA3E4472BB897F23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_helper.h */; };
+		A7A103B4D74A4E0E8C589C23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_server_transporter.h */ = {isa = PBXBuildFile; fileRef = 0DA65734BBF741A980E5E2E7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_server_transporter.h */; };
+		A9FB4F426CE34F5CBB84E0F2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/transporter.cpp */ = {isa = PBXBuildFile; fileRef = C1BB11D9C4A544439622D8DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/transporter.cpp */; };
+		B0E917610BFF4824BADF5EBD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */ = {isa = PBXBuildFile; fileRef = 99C0F484BBB14D1AB5F1FC70 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */; };
+		B29A57C10D5B4D33A770F0FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */ = {isa = PBXBuildFile; fileRef = F20D86C3C39D40FDB9897113 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */; };
+		B581A80062434DB091F1AC5F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */ = {isa = PBXBuildFile; fileRef = 92C1CA6A46544807B137FA3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */; };
+		B6440711B4CB417B86B7B021 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_facade.h */ = {isa = PBXBuildFile; fileRef = 45EC74305773456395DC3BAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_facade.h */; };
+		B648C57746F346EEBA2942FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */ = {isa = PBXBuildFile; fileRef = B8C53AF3984C44F5B71DEDBD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */; };
+		B77B19E5DD6C4128A71C10F9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_api.cpp */ = {isa = PBXBuildFile; fileRef = F294A57F6383415EAB1D000B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_api.cpp */; };
+		C22E3BCD8772405D86397B1D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */ = {isa = PBXBuildFile; fileRef = 89DED6A32E0A400CAB44854F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */; };
+		C2DD7B3B34314B7886323EFA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */ = {isa = PBXBuildFile; fileRef = B4EEFB7A23214DFFA9321564 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */; };
+		C5F8CA7E2BA14784A9E98E08 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */ = {isa = PBXBuildFile; fileRef = 29E71B5C62D541259834CC3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */; };
+		C9373602B65D48EEA54233B2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */ = {isa = PBXBuildFile; fileRef = 133AB3FA0F484AE19F28C379 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */; };
+		C953DD6BEDC4434BBEEE6E3F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */ = {isa = PBXBuildFile; fileRef = 4D937CA857324738AE1DEA88 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */; };
+		CBFC1D9D9F2E4C948316DE9C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */ = {isa = PBXBuildFile; fileRef = 9C7F540B6C264299BC0AB0EF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */; };
+		CD0A81B8F7F14690A8E109C2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */ = {isa = PBXBuildFile; fileRef = D151C8AB133242168B86D1CC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */; };
+		D3F959B424874E7680DD262F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */ = {isa = PBXBuildFile; fileRef = 434873EC8D4148C5999953A3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */; };
+		D41BFA6CC2364CBABCEBB770 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */ = {isa = PBXBuildFile; fileRef = 296A68693BDA4EE39605964C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */; };
+		DADBD4DB42F84934A017A761 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */ = {isa = PBXBuildFile; fileRef = F0082D580F654666890D9308 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */; };
+		DBDE7CDC7514439CB4AB509E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */ = {isa = PBXBuildFile; fileRef = 53D5828F5F404A558C9EE826 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */; };
+		E0CE0BC7DAC940A69509D256 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */ = {isa = PBXBuildFile; fileRef = 5EFA184016C249F38F7BBDEE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */; };
+		E20020EFE2A8473E94025176 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */ = {isa = PBXBuildFile; fileRef = 64BDBA69519E411DB1E3001E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */; };
+		E23EB706AEEB43E39CF88CB8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */ = {isa = PBXBuildFile; fileRef = FED15A9A1570467697D12DFB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */; };
+		E4BD93FD798E432AB0049222 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */ = {isa = PBXBuildFile; fileRef = BDF24934873943E183D14A61 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */; };
+		E9A23DE91C494BA8A4996F6D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A43E4D615C064FB387A459D6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */; };
+		EA40D5BA4217487CA988F673 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_server_transporter.cpp */ = {isa = PBXBuildFile; fileRef = 270787EB1F8F4116B16F69E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_server_transporter.cpp */; };
+		EBAD679AD9A644FFB834C9A5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */ = {isa = PBXBuildFile; fileRef = 287E20E95AE343E8AEA51419 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */; };
+		EBCB0D255D534D128CB12CDC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */ = {isa = PBXBuildFile; fileRef = F06CF6F936DB4272B56AEAF9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */; };
+		EF26C3C592C84DD893C8B8C1 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9C63CEFACECA4A43AFABDEC8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */; };
+		EFE1DDC9E26D4A7BB4700958 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger_manager.h */ = {isa = PBXBuildFile; fileRef = CD8A2CEA60484490968D11A6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger_manager.h */; };
+		F16F1630E9D54D51B85A4553 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/stack.cpp */ = {isa = PBXBuildFile; fileRef = 9A05224C118B4308A2585A44 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/stack.cpp */; };
+		F64B9E0A30B641A8BC854B65 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */ = {isa = PBXBuildFile; fileRef = 439D03085D2A4EF28AA3461D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */; };
+		FB06651E9ED74FEA85E71600 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/hook_state.cpp */ = {isa = PBXBuildFile; fileRef = 7413AD465A0C4EF28571188C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/hook_state.cpp */; };
+		FEC7F616015F4341B52B6870 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */ = {isa = PBXBuildFile; fileRef = 31943A01E04B4FA1816D430E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */; };
+		FF2EEAAA3F1D4EB3A82E026B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A999AC7B60BA46CD8D48DFFF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2B0BD42AFD82461B9CF8F375 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		30EEC25958CE498891568795 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		869CFB19226C42888F90C1F7 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F75C689371484CE3AAA4A133 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		12A629B5BFC74BB7AF04C5D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5813EE18D474770B1436427;
+			remoteInfo = emmy_debugger;
+		};
+		4380559E4A7645499C6AB7FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E66C88D11C4486BE367442;
+			remoteInfo = uv;
+		};
+		43B0FF1746994759A09972F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 949412F856EB498B80341E81;
+			remoteInfo = ALL_BUILD;
+		};
+		48B68C53094048E382F09EF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E3F1AA6CA14812ABFF8514;
+			remoteInfo = uv_a;
+		};
+		6BFCA5A8429D4437B1A2DBBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E3F1AA6CA14812ABFF8514;
+			remoteInfo = uv_a;
+		};
+		72AB653C55AD400396C9ABA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E66C88D11C4486BE367442;
+			remoteInfo = uv;
+		};
+		74791493646B4A979CA2506C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5813EE18D474770B1436427;
+			remoteInfo = emmy_debugger;
+		};
+		D115FCC841644633BF472CB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AAAD664953F4ED6B05BF37A;
+			remoteInfo = emmy_core;
+		};
+		DBB82AEA107940388B128090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF19ADF51D94F928E618DC8;
+			remoteInfo = ZERO_CHECK;
+		};
+		FC7E401CFA344481AD345B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C94942945DF4C22AF1949F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF19ADF51D94F928E618DC8;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0054EA8C05E44496BC0C9A98 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		048E7C8910F649058A6DC3BF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_helper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emmy_helper.cpp; path = ../../emmy_debugger/src/emmy_helper.cpp; sourceTree = SOURCE_ROOT; };
+		063AFA3A9B894A6AA4928A3A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = loop.c; path = "../../third-party/libuv-1.29.0/src/unix/loop.c"; sourceTree = SOURCE_ROOT; };
+		0667398C41C84B0B82C7890E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/lua_version.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lua_version.cpp; path = ../../emmy_debugger/src/lua_version.cpp; sourceTree = SOURCE_ROOT; };
+		0997F43D75004AE2877EB549 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = idna.c; path = "../../third-party/libuv-1.29.0/src/idna.c"; sourceTree = SOURCE_ROOT; };
+		0D90B64D06864098A7427676 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pipe.c; path = "../../third-party/libuv-1.29.0/src/unix/pipe.c"; sourceTree = SOURCE_ROOT; };
+		0DA65734BBF741A980E5E2E7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_server_transporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pipeline_server_transporter.h; path = ../../include/emmy_debugger/proto/pipeline_server_transporter.h; sourceTree = SOURCE_ROOT; };
+		0F3FD42CF9184CE28C28B3AA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "bsd-ifaddrs.c"; path = "../../third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c"; sourceTree = SOURCE_ROOT; };
+		129E75C02F654FA9BD3A02DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_client_transporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = socket_client_transporter.cpp; path = ../../emmy_debugger/src/proto/socket_client_transporter.cpp; sourceTree = SOURCE_ROOT; };
+		133AB3FA0F484AE19F28C379 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = idna.c; path = "../../third-party/libuv-1.29.0/src/idna.c"; sourceTree = SOURCE_ROOT; };
+		133D0D3945394C4885FE4A7E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emmy_debugger.cpp; path = ../../emmy_debugger/src/emmy_debugger.cpp; sourceTree = SOURCE_ROOT; };
+		1349A050181F4CE8A6455A10 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = poll.c; path = "../../third-party/libuv-1.29.0/src/unix/poll.c"; sourceTree = SOURCE_ROOT; };
+		155A9DD17912438B9AB2B608 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1717AFCA7A4941BD9FF25367 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emmy_debugger.h; path = ../../include/emmy_debugger/emmy_debugger.h; sourceTree = SOURCE_ROOT; };
+		1BFD9F74B6C24C2FAA4E016B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_core/src/emmy_core.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emmy_core.cpp; path = ../../emmy_core/src/emmy_core.cpp; sourceTree = SOURCE_ROOT; };
+		26435DAC6110478E94B56A99 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kqueue.c; path = "../../third-party/libuv-1.29.0/src/unix/kqueue.c"; sourceTree = SOURCE_ROOT; };
+		26832F6ED7EA4AAC8EB5C7FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/api/lua_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lua_api.h; path = ../../include/emmy_debugger/api/lua_api.h; sourceTree = SOURCE_ROOT; };
+		270787EB1F8F4116B16F69E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_server_transporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pipeline_server_transporter.cpp; path = ../../emmy_debugger/src/proto/pipeline_server_transporter.cpp; sourceTree = SOURCE_ROOT; };
+		286A1F027D28434BA9FF3D4C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "bsd-ifaddrs.c"; path = "../../third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c"; sourceTree = SOURCE_ROOT; };
+		287E20E95AE343E8AEA51419 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = threadpool.c; path = "../../third-party/libuv-1.29.0/src/threadpool.c"; sourceTree = SOURCE_ROOT; };
+		292E0232D8DE4D68B6EBAAB8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "loop-watcher.c"; path = "../../third-party/libuv-1.29.0/src/unix/loop-watcher.c"; sourceTree = SOURCE_ROOT; };
+		296A68693BDA4EE39605964C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "uv-common.c"; path = "../../third-party/libuv-1.29.0/src/uv-common.c"; sourceTree = SOURCE_ROOT; };
+		29E71B5C62D541259834CC3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = proctitle.c; path = "../../third-party/libuv-1.29.0/src/unix/proctitle.c"; sourceTree = SOURCE_ROOT; };
+		31943A01E04B4FA1816D430E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tcp.c; path = "../../third-party/libuv-1.29.0/src/unix/tcp.c"; sourceTree = SOURCE_ROOT; };
+		33EE42B4925442EFB938371A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "uv-data-getter-setters.c"; path = "../../third-party/libuv-1.29.0/src/uv-data-getter-setters.c"; sourceTree = SOURCE_ROOT; };
+		36846F6C533844BAB0385E6C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_server_transporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = socket_server_transporter.cpp; path = ../../emmy_debugger/src/proto/socket_server_transporter.cpp; sourceTree = SOURCE_ROOT; };
+		37408A7A6CC040B2AD2D2350 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = core.c; path = "../../third-party/libuv-1.29.0/src/unix/core.c"; sourceTree = SOURCE_ROOT; };
+		3C9196F90F99479C9155CA6A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pipe.c; path = "../../third-party/libuv-1.29.0/src/unix/pipe.c"; sourceTree = SOURCE_ROOT; };
+		3CCDFCB596454FFFA1EE04FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = stream.c; path = "../../third-party/libuv-1.29.0/src/unix/stream.c"; sourceTree = SOURCE_ROOT; };
+		3E19136DA5E942E68C4E1869 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = udp.c; path = "../../third-party/libuv-1.29.0/src/unix/udp.c"; sourceTree = SOURCE_ROOT; };
+		42BB09F2770743CEB61999AC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dl.c; path = "../../third-party/libuv-1.29.0/src/unix/dl.c"; sourceTree = SOURCE_ROOT; };
+		434873EC8D4148C5999953A3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = getnameinfo.c; path = "../../third-party/libuv-1.29.0/src/unix/getnameinfo.c"; sourceTree = SOURCE_ROOT; };
+		439D03085D2A4EF28AA3461D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dl.c; path = "../../third-party/libuv-1.29.0/src/unix/dl.c"; sourceTree = SOURCE_ROOT; };
+		45EC74305773456395DC3BAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_facade.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emmy_facade.h; path = ../../include/emmy_debugger/emmy_facade.h; sourceTree = SOURCE_ROOT; };
+		46F31BF543CD413585B3995E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/transporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = transporter.h; path = ../../include/emmy_debugger/transporter.h; sourceTree = SOURCE_ROOT; };
+		48854301CC8343FE9E964F14 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_server_transporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = socket_server_transporter.h; path = ../../include/emmy_debugger/proto/socket_server_transporter.h; sourceTree = SOURCE_ROOT; };
+		4AA29ED448E14FCD87E848E4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = async.c; path = "../../third-party/libuv-1.29.0/src/unix/async.c"; sourceTree = SOURCE_ROOT; };
+		4D937CA857324738AE1DEA88 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = inet.c; path = "../../third-party/libuv-1.29.0/src/inet.c"; sourceTree = SOURCE_ROOT; };
+		4F62223CBA3E4472BB897F23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_helper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emmy_helper.h; path = ../../include/emmy_debugger/emmy_helper.h; sourceTree = SOURCE_ROOT; };
+		52C6AC8245894B41ABAE6A00 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = async.c; path = "../../third-party/libuv-1.29.0/src/unix/async.c"; sourceTree = SOURCE_ROOT; };
+		53D5828F5F404A558C9EE826 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = poll.c; path = "../../third-party/libuv-1.29.0/src/unix/poll.c"; sourceTree = SOURCE_ROOT; };
+		54953EAEA3D7431B9486F49A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_facade.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emmy_facade.cpp; path = ../../emmy_debugger/src/emmy_facade.cpp; sourceTree = SOURCE_ROOT; };
+		57F517E50DC14C13BDCB6EE9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "loop-watcher.c"; path = "../../third-party/libuv-1.29.0/src/unix/loop-watcher.c"; sourceTree = SOURCE_ROOT; };
+		5D03DFD569DB45BF89D5C44A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = process.c; path = "../../third-party/libuv-1.29.0/src/unix/process.c"; sourceTree = SOURCE_ROOT; };
+		5EFA184016C249F38F7BBDEE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = getaddrinfo.c; path = "../../third-party/libuv-1.29.0/src/unix/getaddrinfo.c"; sourceTree = SOURCE_ROOT; };
+		61508FE5C2E94D709F9C10A8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = signal.c; path = "../../third-party/libuv-1.29.0/src/unix/signal.c"; sourceTree = SOURCE_ROOT; };
+		64BDBA69519E411DB1E3001E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = threadpool.c; path = "../../third-party/libuv-1.29.0/src/threadpool.c"; sourceTree = SOURCE_ROOT; };
+		67823ABBB3164174A40CCE3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = version.c; path = "../../third-party/libuv-1.29.0/src/version.c"; sourceTree = SOURCE_ROOT; };
+		6F7D39263A0B4B40B103A0EA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "darwin-proctitle.c"; path = "../../third-party/libuv-1.29.0/src/unix/darwin-proctitle.c"; sourceTree = SOURCE_ROOT; };
+		7413AD465A0C4EF28571188C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/hook_state.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hook_state.cpp; path = ../../emmy_debugger/src/hook_state.cpp; sourceTree = SOURCE_ROOT; };
+		74F4F4992A6E4679BC085AD5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsevents.c; path = "../../third-party/libuv-1.29.0/src/unix/fsevents.c"; sourceTree = SOURCE_ROOT; };
+		757829F7B1F240BA8E9344D5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/hook_state.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hook_state.h; path = ../../include/emmy_debugger/hook_state.h; sourceTree = SOURCE_ROOT; };
+		7C64E0C59C534B959D7FA5FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = process.c; path = "../../third-party/libuv-1.29.0/src/unix/process.c"; sourceTree = SOURCE_ROOT; };
+		837356C7D0C7437F80D41BFF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = loop.c; path = "../../third-party/libuv-1.29.0/src/unix/loop.c"; sourceTree = SOURCE_ROOT; };
+		8676F6224557450181712F68 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fs.c; path = "../../third-party/libuv-1.29.0/src/unix/fs.c"; sourceTree = SOURCE_ROOT; };
+		89DED6A32E0A400CAB44854F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tty.c; path = "../../third-party/libuv-1.29.0/src/unix/tty.c"; sourceTree = SOURCE_ROOT; };
+		8BAED31B15E64F33AC158176 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_client_transporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pipeline_client_transporter.h; path = ../../include/emmy_debugger/proto/pipeline_client_transporter.h; sourceTree = SOURCE_ROOT; };
+		92C1CA6A46544807B137FA3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timer.c; path = "../../third-party/libuv-1.29.0/src/timer.c"; sourceTree = SOURCE_ROOT; };
+		94274E2799EC478D9A54771F /* uv_a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libuv_a.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AE63C360EB472CA9A13B34 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = darwin.c; path = "../../third-party/libuv-1.29.0/src/unix/darwin.c"; sourceTree = SOURCE_ROOT; };
+		97DAA9745D394BEFA474BE56 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emmy_debugger_manager.cpp; path = ../../emmy_debugger/src/emmy_debugger_manager.cpp; sourceTree = SOURCE_ROOT; };
+		99C0F484BBB14D1AB5F1FC70 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "fs-poll.c"; path = "../../third-party/libuv-1.29.0/src/fs-poll.c"; sourceTree = SOURCE_ROOT; };
+		9A05224C118B4308A2585A44 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/stack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stack.cpp; path = ../../emmy_debugger/src/stack.cpp; sourceTree = SOURCE_ROOT; };
+		9BE4A897BB6448CFA78168DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = udp.c; path = "../../third-party/libuv-1.29.0/src/unix/udp.c"; sourceTree = SOURCE_ROOT; };
+		9C63CEFACECA4A43AFABDEC8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../third-party/libuv-1.29.0/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		9C7F540B6C264299BC0AB0EF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsevents.c; path = "../../third-party/libuv-1.29.0/src/unix/fsevents.c"; sourceTree = SOURCE_ROOT; };
+		9E7DBF5EAE1D4E978CCDD63E /* uv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libuv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05798D7EB56495BAB1CB51C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = darwin.c; path = "../../third-party/libuv-1.29.0/src/unix/darwin.c"; sourceTree = SOURCE_ROOT; };
+		A15C9334055C44DEAE2EBDC2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state/lua_state_jit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lua_state_jit.cpp; path = ../../emmy_debugger/src/api/lua_state/lua_state_jit.cpp; sourceTree = SOURCE_ROOT; };
+		A244C359D8C3469F895CBE3D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "fs-poll.c"; path = "../../third-party/libuv-1.29.0/src/fs-poll.c"; sourceTree = SOURCE_ROOT; };
+		A43E4D615C064FB387A459D6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../third-party/libuv-1.29.0/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		A50E9C78FEE6434FB7F9E3E0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = types.h; path = ../../include/emmy_debugger/types.h; sourceTree = SOURCE_ROOT; };
+		A87041689F6A401DA8FEC2E8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = thread.c; path = "../../third-party/libuv-1.29.0/src/unix/thread.c"; sourceTree = SOURCE_ROOT; };
+		A8B8FA78337A44F5999C900F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lua_state.cpp; path = ../../emmy_debugger/src/api/lua_state.cpp; sourceTree = SOURCE_ROOT; };
+		A999AC7B60BA46CD8D48DFFF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../../emmy_debugger/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B08A4AD3BD2E4CC4A24EA668 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "uv-common.c"; path = "../../third-party/libuv-1.29.0/src/uv-common.c"; sourceTree = SOURCE_ROOT; };
+		B4EEFB7A23214DFFA9321564 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strscpy.c; path = "../../third-party/libuv-1.29.0/src/strscpy.c"; sourceTree = SOURCE_ROOT; };
+		B8C53AF3984C44F5B71DEDBD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timer.c; path = "../../third-party/libuv-1.29.0/src/timer.c"; sourceTree = SOURCE_ROOT; };
+		BDF24934873943E183D14A61 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tty.c; path = "../../third-party/libuv-1.29.0/src/unix/tty.c"; sourceTree = SOURCE_ROOT; };
+		C1BB11D9C4A544439622D8DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/transporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transporter.cpp; path = ../../emmy_debugger/src/transporter.cpp; sourceTree = SOURCE_ROOT; };
+		C214021762E34FA29CD8B138 /* emmy_core */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libemmy_core.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DE2E79B27344448FDF7AD6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strscpy.c; path = "../../third-party/libuv-1.29.0/src/strscpy.c"; sourceTree = SOURCE_ROOT; };
+		CA22EED431C44610BB60EE23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = getaddrinfo.c; path = "../../third-party/libuv-1.29.0/src/unix/getaddrinfo.c"; sourceTree = SOURCE_ROOT; };
+		CC4B483FEB7147319564771C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = proctitle.c; path = "../../third-party/libuv-1.29.0/src/unix/proctitle.c"; sourceTree = SOURCE_ROOT; };
+		CD8A2CEA60484490968D11A6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emmy_debugger_manager.h; path = ../../include/emmy_debugger/emmy_debugger_manager.h; sourceTree = SOURCE_ROOT; };
+		CD9746AE232748E2B4CF97E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_client_transporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pipeline_client_transporter.cpp; path = ../../emmy_debugger/src/proto/pipeline_client_transporter.cpp; sourceTree = SOURCE_ROOT; };
+		D151C8AB133242168B86D1CC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "uv-data-getter-setters.c"; path = "../../third-party/libuv-1.29.0/src/uv-data-getter-setters.c"; sourceTree = SOURCE_ROOT; };
+		D3694D0719334B76B719B320 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/lua_version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lua_version.h; path = ../../include/emmy_debugger/lua_version.h; sourceTree = SOURCE_ROOT; };
+		D5FB1C3177CD4CF4BF74AC6E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = signal.c; path = "../../third-party/libuv-1.29.0/src/unix/signal.c"; sourceTree = SOURCE_ROOT; };
+		D928E1B5092542599A5F050B /* emmy_debugger */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libemmy_debugger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36E5F8864EA4AD5959B1891 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = thread.c; path = "../../third-party/libuv-1.29.0/src/unix/thread.c"; sourceTree = SOURCE_ROOT; };
+		E37A19C5A04B4AC0A75B9DA7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_client_transporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = socket_client_transporter.h; path = ../../include/emmy_debugger/proto/socket_client_transporter.h; sourceTree = SOURCE_ROOT; };
+		EB2A52EDF8E747AE86C606CC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fs.c; path = "../../third-party/libuv-1.29.0/src/unix/fs.c"; sourceTree = SOURCE_ROOT; };
+		F0082D580F654666890D9308 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = getnameinfo.c; path = "../../third-party/libuv-1.29.0/src/unix/getnameinfo.c"; sourceTree = SOURCE_ROOT; };
+		F062E71C46A847E4B2E4F437 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = version.c; path = "../../third-party/libuv-1.29.0/src/version.c"; sourceTree = SOURCE_ROOT; };
+		F06CF6F936DB4272B56AEAF9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tcp.c; path = "../../third-party/libuv-1.29.0/src/unix/tcp.c"; sourceTree = SOURCE_ROOT; };
+		F20D86C3C39D40FDB9897113 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = inet.c; path = "../../third-party/libuv-1.29.0/src/inet.c"; sourceTree = SOURCE_ROOT; };
+		F27028DB67B94CDD9497ECAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kqueue.c; path = "../../third-party/libuv-1.29.0/src/unix/kqueue.c"; sourceTree = SOURCE_ROOT; };
+		F294A57F6383415EAB1D000B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_api.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lua_api.cpp; path = ../../emmy_debugger/src/api/lua_api.cpp; sourceTree = SOURCE_ROOT; };
+		F2D0DDB997D846AF90A1981E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = core.c; path = "../../third-party/libuv-1.29.0/src/unix/core.c"; sourceTree = SOURCE_ROOT; };
+		FC5307E0F00147238A2D4357 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = stream.c; path = "../../third-party/libuv-1.29.0/src/unix/stream.c"; sourceTree = SOURCE_ROOT; };
+		FED15A9A1570467697D12DFB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "darwin-proctitle.c"; path = "../../third-party/libuv-1.29.0/src/unix/darwin-proctitle.c"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EBC50701E5D42D8B4C7A489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764460954668403B89E29103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		946189B053974BAD925ED81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB15804BCB47319B8D16E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B847F75AD541489EF39FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CD9AFCEF3EE43F5B750CA1D /* emmy_core */ = {
+			isa = PBXGroup;
+			children = (
+				206FB6F05C8B4198818F91E2 /* Source Files */,
+				155A9DD17912438B9AB2B608 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt */,
+			);
+			name = emmy_core;
+			sourceTree = "<group>";
+		};
+		15441472ED794804BECD45AB /* emmy_debugger */ = {
+			isa = PBXGroup;
+			children = (
+				A9E72A1EB11849018A5CFC38 /* Header Files */,
+				519247E3A0294F2D8979DC1D /* Source Files */,
+				A999AC7B60BA46CD8D48DFFF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/CMakeLists.txt */,
+			);
+			name = emmy_debugger;
+			sourceTree = "<group>";
+		};
+		1F6F955FC4844D8087DAD19C /* uv */ = {
+			isa = PBXGroup;
+			children = (
+				F335C6968BBC4EA0939BE1C5 /* Source Files */,
+				A43E4D615C064FB387A459D6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */,
+			);
+			name = uv;
+			sourceTree = "<group>";
+		};
+		206FB6F05C8B4198818F91E2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD9F74B6C24C2FAA4E016B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_core/src/emmy_core.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2495AEF9ADF447D283A857A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C214021762E34FA29CD8B138 /* emmy_core */,
+				D928E1B5092542599A5F050B /* emmy_debugger */,
+				9E7DBF5EAE1D4E978CCDD63E /* uv */,
+				94274E2799EC478D9A54771F /* uv_a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E55EB461574078A4864A3A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				99C0F484BBB14D1AB5F1FC70 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */,
+				0997F43D75004AE2877EB549 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */,
+				F20D86C3C39D40FDB9897113 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */,
+				B4EEFB7A23214DFFA9321564 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */,
+				64BDBA69519E411DB1E3001E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */,
+				92C1CA6A46544807B137FA3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */,
+				4AA29ED448E14FCD87E848E4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */,
+				286A1F027D28434BA9FF3D4C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */,
+				37408A7A6CC040B2AD2D2350 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */,
+				FED15A9A1570467697D12DFB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */,
+				96AE63C360EB472CA9A13B34 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */,
+				439D03085D2A4EF28AA3461D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */,
+				8676F6224557450181712F68 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */,
+				9C7F540B6C264299BC0AB0EF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */,
+				5EFA184016C249F38F7BBDEE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */,
+				434873EC8D4148C5999953A3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */,
+				F27028DB67B94CDD9497ECAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */,
+				292E0232D8DE4D68B6EBAAB8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */,
+				063AFA3A9B894A6AA4928A3A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */,
+				3C9196F90F99479C9155CA6A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */,
+				53D5828F5F404A558C9EE826 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */,
+				7C64E0C59C534B959D7FA5FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */,
+				29E71B5C62D541259834CC3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */,
+				61508FE5C2E94D709F9C10A8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */,
+				3CCDFCB596454FFFA1EE04FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */,
+				31943A01E04B4FA1816D430E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */,
+				E36E5F8864EA4AD5959B1891 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */,
+				89DED6A32E0A400CAB44854F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */,
+				9BE4A897BB6448CFA78168DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */,
+				296A68693BDA4EE39605964C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */,
+				D151C8AB133242168B86D1CC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */,
+				67823ABBB3164174A40CCE3C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		519247E3A0294F2D8979DC1D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F294A57F6383415EAB1D000B /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_api.cpp */,
+				A8B8FA78337A44F5999C900F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state.cpp */,
+				A15C9334055C44DEAE2EBDC2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state/lua_state_jit.cpp */,
+				133D0D3945394C4885FE4A7E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger.cpp */,
+				97DAA9745D394BEFA474BE56 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger_manager.cpp */,
+				54953EAEA3D7431B9486F49A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_facade.cpp */,
+				048E7C8910F649058A6DC3BF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_helper.cpp */,
+				7413AD465A0C4EF28571188C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/hook_state.cpp */,
+				0667398C41C84B0B82C7890E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/lua_version.cpp */,
+				CD9746AE232748E2B4CF97E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_client_transporter.cpp */,
+				270787EB1F8F4116B16F69E3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_server_transporter.cpp */,
+				129E75C02F654FA9BD3A02DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_client_transporter.cpp */,
+				36846F6C533844BAB0385E6C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_server_transporter.cpp */,
+				9A05224C118B4308A2585A44 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/stack.cpp */,
+				C1BB11D9C4A544439622D8DB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/transporter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		62A7691046084D4A942BBA76 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6DE74DBE662446C6B897E8EA = {
+			isa = PBXGroup;
+			children = (
+				0CD9AFCEF3EE43F5B750CA1D /* emmy_core */,
+				C5A2A307990D4788AFCD67E7 /* ALL_BUILD */,
+				C7B71B13AECD45A5A7BCD163 /* uv_a */,
+				1F6F955FC4844D8087DAD19C /* uv */,
+				15441472ED794804BECD45AB /* emmy_debugger */,
+				2495AEF9ADF447D283A857A4 /* Products */,
+				02B847F75AD541489EF39FAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9E72A1EB11849018A5CFC38 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				26832F6ED7EA4AAC8EB5C7FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/api/lua_api.h */,
+				1717AFCA7A4941BD9FF25367 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger.h */,
+				CD8A2CEA60484490968D11A6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_debugger_manager.h */,
+				45EC74305773456395DC3BAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_facade.h */,
+				4F62223CBA3E4472BB897F23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/emmy_helper.h */,
+				757829F7B1F240BA8E9344D5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/hook_state.h */,
+				D3694D0719334B76B719B320 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/lua_version.h */,
+				8BAED31B15E64F33AC158176 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_client_transporter.h */,
+				0DA65734BBF741A980E5E2E7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/pipeline_server_transporter.h */,
+				E37A19C5A04B4AC0A75B9DA7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_client_transporter.h */,
+				48854301CC8343FE9E964F14 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/proto/socket_server_transporter.h */,
+				46F31BF543CD413585B3995E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/transporter.h */,
+				A50E9C78FEE6434FB7F9E3E0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/include/emmy_debugger/types.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C5A2A307990D4788AFCD67E7 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				62A7691046084D4A942BBA76 /* CMake Rules */,
+				0054EA8C05E44496BC0C9A98 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		C7B71B13AECD45A5A7BCD163 /* uv_a */ = {
+			isa = PBXGroup;
+			children = (
+				30E55EB461574078A4864A3A /* Source Files */,
+				9C63CEFACECA4A43AFABDEC8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/CMakeLists.txt */,
+			);
+			name = uv_a;
+			sourceTree = "<group>";
+		};
+		F335C6968BBC4EA0939BE1C5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A244C359D8C3469F895CBE3D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */,
+				133AB3FA0F484AE19F28C379 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */,
+				4D937CA857324738AE1DEA88 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */,
+				C4DE2E79B27344448FDF7AD6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */,
+				287E20E95AE343E8AEA51419 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */,
+				B8C53AF3984C44F5B71DEDBD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */,
+				52C6AC8245894B41ABAE6A00 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */,
+				0F3FD42CF9184CE28C28B3AA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */,
+				F2D0DDB997D846AF90A1981E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */,
+				6F7D39263A0B4B40B103A0EA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */,
+				A05798D7EB56495BAB1CB51C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */,
+				42BB09F2770743CEB61999AC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */,
+				EB2A52EDF8E747AE86C606CC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */,
+				74F4F4992A6E4679BC085AD5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */,
+				CA22EED431C44610BB60EE23 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */,
+				F0082D580F654666890D9308 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */,
+				26435DAC6110478E94B56A99 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */,
+				57F517E50DC14C13BDCB6EE9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */,
+				837356C7D0C7437F80D41BFF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */,
+				0D90B64D06864098A7427676 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */,
+				1349A050181F4CE8A6455A10 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */,
+				5D03DFD569DB45BF89D5C44A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */,
+				CC4B483FEB7147319564771C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */,
+				D5FB1C3177CD4CF4BF74AC6E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */,
+				FC5307E0F00147238A2D4357 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */,
+				F06CF6F936DB4272B56AEAF9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */,
+				A87041689F6A401DA8FEC2E8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */,
+				BDF24934873943E183D14A61 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */,
+				3E19136DA5E942E68C4E1869 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */,
+				B08A4AD3BD2E4CC4A24EA668 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */,
+				33EE42B4925442EFB938371A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */,
+				F062E71C46A847E4B2E4F437 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E3F1AA6CA14812ABFF8514 /* uv_a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 562C270762184E88976DEBEA /* Build configuration list for PBXNativeTarget "uv_a" */;
+			buildPhases = (
+				D393ED0D4570438CBCA8E2E9 /* Sources */,
+				0EBC50701E5D42D8B4C7A489 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uv_a;
+			productName = uv_a;
+			productReference = 94274E2799EC478D9A54771F /* uv_a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5AAAD664953F4ED6B05BF37A /* emmy_core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B7DCDB808C645A59D38959C /* Build configuration list for PBXNativeTarget "emmy_core" */;
+			buildPhases = (
+				6D048F46F6F04AB9B7C10804 /* Sources */,
+				946189B053974BAD925ED81B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1204D5F474324827846D5EBA /* PBXTargetDependency */,
+				A55165C0E6EE4730B51313ED /* PBXTargetDependency */,
+			);
+			name = emmy_core;
+			productName = emmy_core;
+			productReference = C214021762E34FA29CD8B138 /* emmy_core */;
+			productType = "com.apple.product-type.library.static";
+		};
+		96E66C88D11C4486BE367442 /* uv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FB5BEBE72644739FC4CBEF /* Build configuration list for PBXNativeTarget "uv" */;
+			buildPhases = (
+				B05A34958D724850B9BF57FD /* Sources */,
+				B1DB15804BCB47319B8D16E8 /* Frameworks */,
+				39EF75FBEAA0B714115F6B1A /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uv;
+			productName = uv;
+			productReference = 9E7DBF5EAE1D4E978CCDD63E /* uv */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C5813EE18D474770B1436427 /* emmy_debugger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6680C6BC8880425CAF29B799 /* Build configuration list for PBXNativeTarget "emmy_debugger" */;
+			buildPhases = (
+				0FC5EFAFA7074DF3A4048CC3 /* Sources */,
+				764460954668403B89E29103 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B883A9A4261A44A79DDCCA6C /* PBXTargetDependency */,
+				30283003A67C48F0A17CE0CF /* PBXTargetDependency */,
+			);
+			name = emmy_debugger;
+			productName = emmy_debugger;
+			productReference = D928E1B5092542599A5F050B /* emmy_debugger */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C94942945DF4C22AF1949F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 06A6C1FFCD4F4EB8805E0C8E /* Build configuration list for PBXProject "emmy_core" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				869CFB19226C42888F90C1F7 /* Debug */,
+				2B0BD42AFD82461B9CF8F375 /* Release */,
+				30EEC25958CE498891568795 /* MinSizeRel */,
+				F75C689371484CE3AAA4A133 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 6DE74DBE662446C6B897E8EA;
+			projectDirPath = ../../../../EmmyDebugger/build_script/xlua_emmy_core;
+			projectRoot = "";
+			targets = (
+				949412F856EB498B80341E81 /* ALL_BUILD */,
+				7FF19ADF51D94F928E618DC8 /* ZERO_CHECK */,
+				5AAAD664953F4ED6B05BF37A /* emmy_core */,
+				C5813EE18D474770B1436427 /* emmy_debugger */,
+				5C1735C47639474487F260F8 /* install */,
+				96E66C88D11C4486BE367442 /* uv */,
+				04E3F1AA6CA14812ABFF8514 /* uv_a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39EF75FBEAA0B714115F6B1A /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/Debug/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/Debug/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/Debug/libuv.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/Release/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/Release/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/Release/libuv.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/MinSizeRel/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/MinSizeRel/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/MinSizeRel/libuv.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/RelWithDebInfo/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/RelWithDebInfo/libuv.dylib /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out/RelWithDebInfo/libuv.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		849B82F619ACC088F378F3FE /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C320A934C9D30B80BF74A692 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  make -f /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  make -f /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  make -f /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core
+  make -f /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FC5EFAFA7074DF3A4048CC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B19E5DD6C4128A71C10F9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_api.cpp */,
+				62E19561D066424682A0CFAB /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state.cpp */,
+				540A3D1EED9F4806A5A97C61 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/api/lua_state/lua_state_jit.cpp */,
+				7B444157EBA14518B250E6FC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger.cpp */,
+				62D5334DD2504B5F829B84D3 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_debugger_manager.cpp */,
+				86BF90010997499A8F90A52A /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_facade.cpp */,
+				A4530AE16CE54A3E81518EF6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/emmy_helper.cpp */,
+				FB06651E9ED74FEA85E71600 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/hook_state.cpp */,
+				51D543B370C2405AB89FA780 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/lua_version.cpp */,
+				899FF8EB20CD47E8A16CA16F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_client_transporter.cpp */,
+				EA40D5BA4217487CA988F673 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/pipeline_server_transporter.cpp */,
+				86E39170AB8C48F58C4D85C4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_client_transporter.cpp */,
+				5E729DCE21804325BD5520AC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/proto/socket_server_transporter.cpp */,
+				F16F1630E9D54D51B85A4553 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/stack.cpp */,
+				A9FB4F426CE34F5CBB84E0F2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src/transporter.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D048F46F6F04AB9B7C10804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1393C772B32F4C16B417FD24 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_core/src/emmy_core.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05A34958D724850B9BF57FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				161CA86270614FF38B14C6F2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */,
+				C9373602B65D48EEA54233B2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */,
+				C953DD6BEDC4434BBEEE6E3F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */,
+				08575029ACA5457FABA5444F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */,
+				EBAD679AD9A644FFB834C9A5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */,
+				B648C57746F346EEBA2942FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */,
+				86C5B75C68714B9992575A08 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */,
+				9A5D770AE5624BB48BF69489 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */,
+				49D6E64D4B2044D98E5AE613 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */,
+				8FB294E7AA614455B8C4E20E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */,
+				59D975A758D548D2A7C51E13 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */,
+				1406599BA4C04F7BA826E3C0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */,
+				455BF33384F64C52B04244BF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */,
+				911548195994465A96D3AC9F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */,
+				84709917D7E74D2981CE425F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */,
+				DADBD4DB42F84934A017A761 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */,
+				A346C9044C844F0BB6F21ABF /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */,
+				76F6474F387D495ABA127D3E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */,
+				7C9428F088F44E02B2CEA6F0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */,
+				685FF1B45AF841A49FA7B5A4 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */,
+				4C4A39D244D845278CFEDB42 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */,
+				69EF3B27E9CF4DEF9D9F2CD6 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */,
+				25B981EE5FDD4D9388319A74 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */,
+				617945ECABD746D282817A82 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */,
+				3FB5A4D127154568AECF96C7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */,
+				EBCB0D255D534D128CB12CDC /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */,
+				9593C270A1FE4848AD4B6998 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */,
+				E4BD93FD798E432AB0049222 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */,
+				8A3F69C78D8D468785A578B9 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */,
+				1FC69F57331F4B428625CD55 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */,
+				41DA2A69CC404CA0A785D846 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */,
+				04EBF98FBED14CADAAE69D31 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D393ED0D4570438CBCA8E2E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E917610BFF4824BADF5EBD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/fs-poll.c */,
+				60FDBBB96734460D8B31AC34 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/idna.c */,
+				B29A57C10D5B4D33A770F0FE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/inet.c */,
+				C2DD7B3B34314B7886323EFA /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/strscpy.c */,
+				E20020EFE2A8473E94025176 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/threadpool.c */,
+				B581A80062434DB091F1AC5F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/timer.c */,
+				22B8CAB682E046F58F76C327 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/async.c */,
+				3793BAE3EBDA490099466898 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/bsd-ifaddrs.c */,
+				78C8725D21574F588F03B428 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/core.c */,
+				E23EB706AEEB43E39CF88CB8 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin-proctitle.c */,
+				573F59F2EEFA48AC808CC985 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/darwin.c */,
+				F64B9E0A30B641A8BC854B65 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/dl.c */,
+				A147A5C7777A499FAC10EBE5 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fs.c */,
+				CBFC1D9D9F2E4C948316DE9C /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c */,
+				E0CE0BC7DAC940A69509D256 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getaddrinfo.c */,
+				D3F959B424874E7680DD262F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/getnameinfo.c */,
+				2DC1C7EC005A44719B22F838 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/kqueue.c */,
+				064E531649BF450EB1526218 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop-watcher.c */,
+				177C02070D8C4CD0AD3395ED /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/loop.c */,
+				20A31518F4324EE1996D0EBE /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/pipe.c */,
+				DBDE7CDC7514439CB4AB509E /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/poll.c */,
+				57EAB2DFA14E40F780CB885F /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/process.c */,
+				C5F8CA7E2BA14784A9E98E08 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/proctitle.c */,
+				7FF622F090DE45188525D4DD /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c */,
+				9559102624E8468B9E7423A7 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/stream.c */,
+				FEC7F616015F4341B52B6870 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tcp.c */,
+				73BE5B7D47A244BDBFDC3AB0 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/thread.c */,
+				C22E3BCD8772405D86397B1D /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c */,
+				7E7614CB1C794D3582BA7729 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/unix/udp.c */,
+				D41BFA6CC2364CBABCEBB770 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-common.c */,
+				CD0A81B8F7F14690A8E109C2 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/uv-data-getter-setters.c */,
+				02E8E936A6674E6FB9058B67 /* /Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src/version.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0746F11B25554CB4A5C7CA90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E66C88D11C4486BE367442 /* uv */;
+			targetProxy = 4380559E4A7645499C6AB7FF /* PBXContainerItemProxy */;
+		};
+		1204D5F474324827846D5EBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5813EE18D474770B1436427 /* emmy_debugger */;
+			targetProxy = 12A629B5BFC74BB7AF04C5D2 /* PBXContainerItemProxy */;
+		};
+		30283003A67C48F0A17CE0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E66C88D11C4486BE367442 /* uv */;
+			targetProxy = 72AB653C55AD400396C9ABA5 /* PBXContainerItemProxy */;
+		};
+		377A61AF350D4E3C900CE5E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E3F1AA6CA14812ABFF8514 /* uv_a */;
+			targetProxy = 48B68C53094048E382F09EF8 /* PBXContainerItemProxy */;
+		};
+		8464278B5FFB4A89838DF647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AAAD664953F4ED6B05BF37A /* emmy_core */;
+			targetProxy = D115FCC841644633BF472CB1 /* PBXContainerItemProxy */;
+		};
+		A55165C0E6EE4730B51313ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF19ADF51D94F928E618DC8 /* ZERO_CHECK */;
+			targetProxy = FC7E401CFA344481AD345B1B /* PBXContainerItemProxy */;
+		};
+		B48F338AD580431D92803CFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5813EE18D474770B1436427 /* emmy_debugger */;
+			targetProxy = 74791493646B4A979CA2506C /* PBXContainerItemProxy */;
+		};
+		B883A9A4261A44A79DDCCA6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E3F1AA6CA14812ABFF8514 /* uv_a */;
+			targetProxy = 6BFCA5A8429D4437B1A2DBBE /* PBXContainerItemProxy */;
+		};
+		E174CFDE27F24299B56DF83A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 949412F856EB498B80341E81 /* ALL_BUILD */;
+			targetProxy = 43B0FF1746994759A09972F5 /* PBXContainerItemProxy */;
+		};
+		E77BA6F276E049D391266F71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF19ADF51D94F928E618DC8 /* ZERO_CHECK */;
+			targetProxy = DBB82AEA107940388B128090 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03044EFF220642F1A3C07D83 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		05A8B87E06814080BF699AFA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",uv_EXPORTS,"'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'","'BUILDING_UV_SHARED=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","-lpthread","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0D175C1CF9D446CCB65B66BD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0D808B772ED240529C365D6E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/build";
+			};
+			name = MinSizeRel;
+		};
+		0D82A4C5FC754AFB9380AAF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		0DC3C08186C6470DB1C1FE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		198D651E6DFD4A188A984B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2B162239FC914215AA45C948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		37ED7E7F4A3944E6BF13FC97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",uv_EXPORTS,"'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'","'BUILDING_UV_SHARED=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","-lpthread","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		385338384C8E4D108FB88F46 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",uv_EXPORTS,"'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'","'BUILDING_UV_SHARED=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","-lpthread","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		42FA2536A9D34D44BE98987A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		43004BF6FA634DB38317A01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		473B76F252C3478E98A2F37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		54E9C4C5A02F43C082AEB98C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		59B26CACA86048C58EACA9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6194537822754037A47E4195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6720A38E0F55496697A49C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",uv_EXPORTS,"'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'","'BUILDING_UV_SHARED=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   -fPIC '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","-lpthread","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		72FC2E8B94D04E1B89760DB2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/build";
+			};
+			name = RelWithDebInfo;
+		};
+		7FAC51F10C694B8EB92BE0B0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		861CA2F08B154CE3AD9B7EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",RAPIDJSON_HAS_STDSTRING,EMMY_USE_LUA_SOURCE,LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_debugger;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/emmy_debugger.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		88E97ADE71AB4EA0B9C8D668 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9749E57812264636948C7ED0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",RAPIDJSON_HAS_STDSTRING,EMMY_USE_LUA_SOURCE,LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_debugger;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/emmy_debugger.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A7D1A607B9F84FBDA150B269 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/third-party/libuv-1.29.0/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-fvisibility=hidden' '--std=gnu89' -Wall -Wextra -Wstrict-prototypes -Wno-unused-parameter ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/libuv.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A89EA0E65A554565BE60A04B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AD4468C41E2741CF88C6807E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BA1E34A06D394EB7893FC5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BB648E238CD541CB93F9A0B8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C76D8749A3DF4B4EBE65192B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/build";
+			};
+			name = Release;
+		};
+		D62BAB06BAEB454BAEA7F000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/build";
+			};
+			name = Debug;
+		};
+		DDC991D366F04414972ED6B2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",RAPIDJSON_HAS_STDSTRING,EMMY_USE_LUA_SOURCE,LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_debugger;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/emmy_debugger.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E1D4954285EA4FB8B0C9C4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",RAPIDJSON_HAS_STDSTRING,EMMY_USE_LUA_SOURCE,LUA_USE_MACOSX,EMMY_LUA_JIT,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/src","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/lua-5.1.5/etc","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/rapidjson-1.1.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/build_script/xlua_emmy_core/../../third-party/libuv-1.29.0/include","/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/EmmyDebugger/emmy_debugger/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = emmy_debugger;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core/emmy_debugger.out";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FEE3474AE95E4998A6EF8BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hcm-b0310/Proj/Unity/frameworks/xLua/build/build_lj_osx/EmmyDebugger/build_script/xlua_emmy_core";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06A6C1FFCD4F4EB8805E0C8E /* Build configuration list for PBXProject "emmy_core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D62BAB06BAEB454BAEA7F000 /* Debug */,
+				C76D8749A3DF4B4EBE65192B /* Release */,
+				0D808B772ED240529C365D6E /* MinSizeRel */,
+				72FC2E8B94D04E1B89760DB2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22ADC7FC79274CF790987449 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA1E34A06D394EB7893FC5EA /* Debug */,
+				473B76F252C3478E98A2F37A /* Release */,
+				7FAC51F10C694B8EB92BE0B0 /* MinSizeRel */,
+				42FA2536A9D34D44BE98987A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B7DCDB808C645A59D38959C /* Build configuration list for PBXNativeTarget "emmy_core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43004BF6FA634DB38317A01C /* Debug */,
+				0D82A4C5FC754AFB9380AAF7 /* Release */,
+				BB648E238CD541CB93F9A0B8 /* MinSizeRel */,
+				03044EFF220642F1A3C07D83 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		562C270762184E88976DEBEA /* Build configuration list for PBXNativeTarget "uv_a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC3C08186C6470DB1C1FE97 /* Debug */,
+				6194537822754037A47E4195 /* Release */,
+				54E9C4C5A02F43C082AEB98C /* MinSizeRel */,
+				A7D1A607B9F84FBDA150B269 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6680C6BC8880425CAF29B799 /* Build configuration list for PBXNativeTarget "emmy_debugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861CA2F08B154CE3AD9B7EF5 /* Debug */,
+				E1D4954285EA4FB8B0C9C4BA /* Release */,
+				9749E57812264636948C7ED0 /* MinSizeRel */,
+				DDC991D366F04414972ED6B2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B5FB5BEBE72644739FC4CBEF /* Build configuration list for PBXNativeTarget "uv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6720A38E0F55496697A49C5C /* Debug */,
+				37ED7E7F4A3944E6BF13FC97 /* Release */,
+				05A8B87E06814080BF699AFA /* MinSizeRel */,
+				385338384C8E4D108FB88F46 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B7FF13A43EA444B5808B5EDF /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198D651E6DFD4A188A984B34 /* Debug */,
+				59B26CACA86048C58EACA9EB /* Release */,
+				0D175C1CF9D446CCB65B66BD /* MinSizeRel */,
+				A89EA0E65A554565BE60A04B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8424070788F43C5BB67E516 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE3474AE95E4998A6EF8BD7 /* Debug */,
+				2B162239FC914215AA45C948 /* Release */,
+				88E97ADE71AB4EA0B9C8D668 /* MinSizeRel */,
+				AD4468C41E2741CF88C6807E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C94942945DF4C22AF1949F5 /* Project object */;
+}
