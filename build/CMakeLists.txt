@@ -242,3 +242,15 @@ add_subdirectory(EmmyDebugger/build_script/xlua_emmy_core)
 add_dependencies(xlua emmy_core)
 #target_link_libraries(xlua PRIVATE emmy_core)
 #endif EmmyDebugger
+
+#begin lua-rapidjson
+set (RAPIDJSON_SRC third-party/lua-rapidjson/src/rapidjson.cpp)
+set_property(
+SOURCE ${RAPIDJSON_SRC}
+APPEND
+PROPERTY COMPILE_DEFINITIONS
+LUA_LIB
+)
+#list(APPEND THIRDPART_INC  third-party/lua-rapidjson/include)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
+#end lua-rapidjson
