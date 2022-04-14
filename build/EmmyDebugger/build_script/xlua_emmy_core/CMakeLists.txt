@@ -49,7 +49,7 @@ add_subdirectory("${emmy_SOURCE_DIR}/emmy_debugger" emmy_debugger.out)
 
 target_include_directories(emmy_core PUBLIC
     "${emmy_SOURCE_DIR}/include"
-    ${emmy_SOURCE_DIR}/third-party/rapidjson-1.1.0/include
+    ${emmy_SOURCE_DIR}/../third-party/rapidjson-1.1.0/include
     ${emmy_SOURCE_DIR}/third-party/libuv-1.29.0/include
 )
 
