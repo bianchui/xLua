@@ -73,6 +73,7 @@ if(EMMY_USE_LUA_SOURCE)
         ${emmy_SOURCE_DIR}/third-party/${EMMY_LUA_DIR}/src
     )
     if(${EMMY_LUA_VERSION} STREQUAL "jit")
+        target_compile_definitions(emmy_debugger PUBLIC -DEMMY_LUA_JIT_SUPPORT_LUA_SETFUNCS)
         target_link_directories(emmy_debugger PUBLIC 
             ${emmy_SOURCE_DIR}/third-party/${EMMY_LUA_DIR}/src
         )

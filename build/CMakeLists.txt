@@ -78,7 +78,9 @@ set_property(
     SOURCE ${EMMY_CORE_SRC}
     APPEND
     PROPERTY COMPILE_DEFINITIONS
+    EMMY_USE_LUA_SOURCE
     EMMY_LUA_JIT
+    EMMY_LUA_JIT_SUPPORT_LUA_SETFUNCS
 )
 set (THIRDPART_SRC ${THIRDPART_SRC} ${EMMY_CORE_SRC})
 add_subdirectory("EmmyDebugger/emmy_debugger" emmy_debugger.out)
