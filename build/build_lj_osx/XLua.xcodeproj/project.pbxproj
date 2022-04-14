@@ -97,6 +97,9 @@
 		591F9AFB2805BD69008F8BBB /* emmy_facade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C402563E564854A0517155 /* emmy_facade.cpp */; };
 		591F9AFC2805BD69008F8BBB /* lua_version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F266D3872D014482AA8F496B /* lua_version.cpp */; };
 		592992122807DBA00097B340 /* rapidjson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 592992112807DBA00097B340 /* rapidjson.cpp */; };
+		59C40B6D2807EB66005036B3 /* Document.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59C40B6C2807EB66005036B3 /* Document.cpp */; };
+		59C40B6F2807EB7F005036B3 /* values.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59C40B6E2807EB7F005036B3 /* values.cpp */; };
+		59C40B752807EB96005036B3 /* Schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59C40B722807EB95005036B3 /* Schema.cpp */; };
 		5E91D18D80C24541868B985A /* xlua.c in Sources */ = {isa = PBXBuildFile; fileRef = 93A3BFC79392480892E5B2F7 /* xlua.c */; };
 		61CB8C51EE2C4D0CBE103C55 /* inet.c in Sources */ = {isa = PBXBuildFile; fileRef = AE371AB8764B412AB4172360 /* inet.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
 		657164AAE0C74C5494899D47 /* except.c in Sources */ = {isa = PBXBuildFile; fileRef = 29C9A6BD2AE440C39064897A /* except.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
@@ -229,13 +232,6 @@
 			remoteGlobalIDString = 5AAAD664953F4ED6B05BF37A;
 			remoteInfo = emmy_core;
 		};
-		E934303BD68F463C92ECDEB5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73B6167DC4AC4D1EB96EF74E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7FF19ADF51D94F928E618DC8;
-			remoteInfo = ZERO_CHECK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -296,7 +292,15 @@
 		524236B51FB04E568A733B94 /* tty.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tty.c; path = "EmmyDebugger/third-party/libuv-1.29.0/src/unix/tty.c"; sourceTree = SOURCE_ROOT; };
 		553749547D804C5C829A088E /* signal.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = signal.c; path = "EmmyDebugger/third-party/libuv-1.29.0/src/unix/signal.c"; sourceTree = SOURCE_ROOT; };
 		591F9ADB2805A40D008F8BBB /* libluajit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libluajit.a; path = prebuilt/macos/libluajit.a; sourceTree = "<group>"; };
-		592992112807DBA00097B340 /* rapidjson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rapidjson.cpp; path = "third-party/lua-rapidjson/src/rapidjson.cpp"; sourceTree = "<group>"; };
+		592992112807DBA00097B340 /* rapidjson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rapidjson.cpp; sourceTree = "<group>"; };
+		59C40B6B2807EACF005036B3 /* Userdata.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Userdata.hpp; sourceTree = "<group>"; };
+		59C40B6C2807EB66005036B3 /* Document.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Document.cpp; sourceTree = "<group>"; };
+		59C40B6E2807EB7F005036B3 /* values.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = values.cpp; sourceTree = "<group>"; };
+		59C40B702807EB95005036B3 /* luax.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = luax.hpp; sourceTree = "<group>"; };
+		59C40B712807EB95005036B3 /* values.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = values.hpp; sourceTree = "<group>"; };
+		59C40B722807EB95005036B3 /* Schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Schema.cpp; sourceTree = "<group>"; };
+		59C40B732807EB96005036B3 /* file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = file.hpp; sourceTree = "<group>"; };
+		59C40B742807EB96005036B3 /* StringStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringStream.hpp; sourceTree = "<group>"; };
 		60785DBB53734CEEB98DB88E /* fsevents.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsevents.c; path = "EmmyDebugger/third-party/libuv-1.29.0/src/unix/fsevents.c"; sourceTree = SOURCE_ROOT; };
 		60F6691D5589487A9BBC9431 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = EmmyDebugger/build_script/xlua_emmy_core/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		6105914248104207958AA625 /* transporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transporter.cpp; path = EmmyDebugger/emmy_debugger/src/transporter.cpp; sourceTree = SOURCE_ROOT; };
@@ -488,9 +492,18 @@
 		5929920F2807DB680097B340 /* lua-rapidjson */ = {
 			isa = PBXGroup;
 			children = (
+				59C40B6C2807EB66005036B3 /* Document.cpp */,
+				59C40B732807EB96005036B3 /* file.hpp */,
+				59C40B702807EB95005036B3 /* luax.hpp */,
 				592992112807DBA00097B340 /* rapidjson.cpp */,
+				59C40B722807EB95005036B3 /* Schema.cpp */,
+				59C40B742807EB96005036B3 /* StringStream.hpp */,
+				59C40B6B2807EACF005036B3 /* Userdata.hpp */,
+				59C40B6E2807EB7F005036B3 /* values.cpp */,
+				59C40B712807EB95005036B3 /* values.hpp */,
 			);
 			name = "lua-rapidjson";
+			path = "third-party/lua-rapidjson/src";
 			sourceTree = "<group>";
 		};
 		592992102807DB870097B340 /* thirdparty */ = {
@@ -713,7 +726,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0C2735653884C049D064128 /* PBXTargetDependency */,
 				21CF6395845B42A59C0E3163 /* PBXTargetDependency */,
 			);
 			name = xlua;
@@ -855,6 +867,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C40B752807EB96005036B3 /* Schema.cpp in Sources */,
 				857EE26F8F044BF6A57E779C /* i64lib.c in Sources */,
 				BA349B025AF24C4CACA64328 /* auxiliar.c in Sources */,
 				ADD363B073FC4572BCA7284A /* buffer.c in Sources */,
@@ -863,9 +876,11 @@
 				61CB8C51EE2C4D0CBE103C55 /* inet.c in Sources */,
 				D1D4FCBAE07948209EAC7E5A /* io.c in Sources */,
 				7D43E2C521A246AAAAEF9A39 /* luasocket.c in Sources */,
+				59C40B6D2807EB66005036B3 /* Document.cpp in Sources */,
 				142DE62D20254401B4211F4A /* mime.c in Sources */,
 				C4B80E375187441E8A7AA6A8 /* options.c in Sources */,
 				3AE963ACD4BB409F8A5B4586 /* select.c in Sources */,
+				59C40B6F2807EB7F005036B3 /* values.cpp in Sources */,
 				30D1CAB842EA4484B7BDE1D9 /* tcp.c in Sources */,
 				1D295B25FDC3444B93A8D30E /* timeout.c in Sources */,
 				A8FB2D84C9484A3F9F8D3323 /* udp.c in Sources */,
@@ -1020,11 +1035,6 @@
 			target = 6E8809C3D4914CD88B715BCF /* xlua */;
 			targetProxy = 53E59E903A1A46D4A57B2C5E /* PBXContainerItemProxy */;
 		};
-		A0C2735653884C049D064128 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7FF19ADF51D94F928E618DC8 /* ZERO_CHECK */;
-			targetProxy = E934303BD68F463C92ECDEB5 /* PBXContainerItemProxy */;
-		};
 		AD3BA29CCBEB4211AC8BC5F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 949412F856EB498B80341E81 /* ALL_BUILD */;
@@ -1123,6 +1133,7 @@
 				);
 				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -1201,10 +1212,7 @@
 				);
 				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build_lj_osx/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -1333,10 +1341,7 @@
 				);
 				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build_lj_osx/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -1814,10 +1819,7 @@
 				);
 				INFOPLIST_FILE = "$(PROJECT_DIR)/build_lj_osx/CMakeFiles/xlua.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build_lj_osx/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
