@@ -33,3 +33,23 @@ build/luajit-2.1.0b2/src/luajit.exe
 build/luajit-2.1.0b2/src/luajit.exp
 build/luajit-2.1.0b2/src/luajit.lib
 
+
+# --- new ---
+# Unity generated
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Tt]emp/
+/[Oo]bj/
+/[Uu]serSettings/
+/[Ll]ocalCache/
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# OS generated
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
