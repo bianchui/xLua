@@ -84,11 +84,15 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${EMMY_CORE_SRC})
 add_subdirectory("EmmyDebugger/emmy_debugger" emmy_debugger.out)
 list(APPEND THIRDPART_INC EmmyDebugger/include)
 list(APPEND THIRDPART_INC EmmyDebugger/third-party/libuv-1.29.0/include)
+
 #endif EmmyDebugger
 
 if (USING_LUAJIT)
 	
     if (APPLE AND NOT IOS AND NOT ANDROID)
+        link_directories("${CMAKE_SOURCE_DIR}/build_lj_osx/libuv.out/")
+        link_directories("${CMAKE_SOURCE_DIR}/build_lj_osx/emmy_debugger.out/")
+        link_directories("${CMAKE_SOURCE_DIR}/prebuilt/macos")
 	    include_directories(
 		  ${CMAKE_SOURCE_DIR}
 		  LuaJIT/src
@@ -266,11 +270,19 @@ if ( WIN32 AND NOT CYGWIN )
     endif()
 else ( )
     if (USING_LUAJIT AND NOT APPLE)
-		target_link_libraries(xlua
-			${CMAKE_SOURCE_DIR}/${LUAJIT_SRC_PATH}/libluajit.a
-			m
+        target_link_libraries(xlua
+            ${CMAKE_SOURCE_DIR}/${LUAJIT_SRC_PATH}/libluajit.a
+            m
             ${THIRDPART_LIB} 
-		)
+        )
+    elseif (USING_LUAJIT AND NOT IOS)
+        target_link_libraries(xlua
+            libluajit.a
+            libemmy_debugger.a
+            libuv_a.a
+            m
+            ${THIRDPART_LIB} 
+        )
     else ()
         target_link_libraries(xlua
             m
