@@ -40,21 +40,50 @@ endif()
 set(LUA_SRC_PATH lua-${LUA_VERSION}/src)
 set(LUAJIT_SRC_PATH luajit-2.1.0b3/src)
 
+#begin lua-rapidjson
+set (RAPIDJSON_SRC third-party/lua-rapidjson/src/rapidjson.cpp)
+set_property(
+SOURCE ${RAPIDJSON_SRC}
+APPEND
+PROPERTY COMPILE_DEFINITIONS
+LUA_LIB
+)
+list(APPEND THIRDPART_INC  third-party/rapidjson-1.1.0/include)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
+#end lua-rapidjson
+
+#begin EmmyDebugger
+#add_subdirectory(EmmyDebugger/build_script/xlua_emmy_core)
+#add_dependencies(xlua emmy_core)
+##target_link_libraries(xlua PRIVATE emmy_core)
+
+option(EMMY_COMPILE_AS_LIB "EmmyLib" ON)
+option(EMMY_USE_LUA_SOURCE "" OFF)
+if (USING_LUAJIT)
+    set(EMMY_LUA_DIR "luajit")
+    add_definitions(-DEMMY_LUA_JIT)
+endif ()
+
+add_subdirectory("EmmyDebugger/third-party/libuv-1.29.0" libuv.out)
+target_sources(emmy_core PUBLIC "")
+set (EMMY_CORE_SRC EmmyDebugger/emmy_core/src/emmy_core.cpp)
+
+add_subdirectory("EmmyDebugger/emmy_debugger" emmy_debugger.out)
+list(APPEND THIRDPART_INC EmmyDebugger/third-party/libuv-1.29.0/include)
+add_dependencies(xlua emmy_debugger)
+#endif EmmyDebugger
+
 if (USING_LUAJIT)
 	
     if (APPLE AND NOT IOS AND NOT ANDROID)
 	    include_directories(
 		  ${CMAKE_SOURCE_DIR}
-		  lua-5.1.5/src
-		  lua-5.1.5/etc
+		  LuaJIT/src
 		  ${CMAKE_CURRENT_BINARY_DIR}
 		  ${THIRDPART_INC}
 	    )
-	    set ( LUA_CORE lua-5.1.5/src/lapi.c lua-5.1.5/src/lcode.c lua-5.1.5/src/ldebug.c lua-5.1.5/src/ldo.c lua-5.1.5/src/ldump.c lua-5.1.5/src/lfunc.c 
-          lua-5.1.5/src/lgc.c lua-5.1.5/src/llex.c lua-5.1.5/src/lmem.c lua-5.1.5/src/lobject.c lua-5.1.5/src/lopcodes.c lua-5.1.5/src/lparser.c lua-5.1.5/src/lstate.c 
-          lua-5.1.5/src/lstring.c lua-5.1.5/src/ltable.c lua-5.1.5/src/ltm.c lua-5.1.5/src/lundump.c lua-5.1.5/src/lvm.c lua-5.1.5/src/lzio.c lua-5.1.5/src/lauxlib.c 
-          lua-5.1.5/src/lbaselib.c lua-5.1.5/src/ldblib.c lua-5.1.5/src/liolib.c lua-5.1.5/src/lmathlib.c lua-5.1.5/src/loslib.c lua-5.1.5/src/ltablib.c 
-          lua-5.1.5/src/lstrlib.c lua-5.1.5/src/linit.c lua-5.1.5/src/loadlib.c)
+	    set ( LUA_CORE prebuilt/macos/libluajit.a)
+        set_property( SOURCE xlua.c APPEND PROPERTY COMPILE_DEFINITIONS USING_LUAJIT )
 	else ()
 	    include_directories(
 		  ${CMAKE_SOURCE_DIR}
@@ -236,21 +265,3 @@ else ( )
         )
     endif()
 endif ( )
-
-#begin EmmyDebugger
-add_subdirectory(EmmyDebugger/build_script/xlua_emmy_core)
-add_dependencies(xlua emmy_core)
-#target_link_libraries(xlua PRIVATE emmy_core)
-#endif EmmyDebugger
-
-#begin lua-rapidjson
-set (RAPIDJSON_SRC third-party/lua-rapidjson/src/rapidjson.cpp)
-set_property(
-SOURCE ${RAPIDJSON_SRC}
-APPEND
-PROPERTY COMPILE_DEFINITIONS
-LUA_LIB
-)
-#list(APPEND THIRDPART_INC  third-party/lua-rapidjson/include)
-set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
-#end lua-rapidjson
