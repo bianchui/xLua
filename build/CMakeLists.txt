@@ -41,14 +41,19 @@ set(LUA_SRC_PATH lua-${LUA_VERSION}/src)
 set(LUAJIT_SRC_PATH luajit-2.1.0b3/src)
 
 #begin lua-rapidjson
-set (RAPIDJSON_SRC third-party/lua-rapidjson/src/rapidjson.cpp)
-set_property(
-SOURCE ${RAPIDJSON_SRC}
-APPEND
-PROPERTY COMPILE_DEFINITIONS
-LUA_LIB
+set (RAPIDJSON_SRC
+    third-party/lua-rapidjson/src/Document.cpp
+    third-party/lua-rapidjson/src/rapidjson.cpp
+    third-party/lua-rapidjson/src/Schema.cpp
+    third-party/lua-rapidjson/src/values.cpp
 )
-list(APPEND THIRDPART_INC  third-party/rapidjson-1.1.0/include)
+set_property(
+    SOURCE ${RAPIDJSON_SRC}
+    APPEND
+    PROPERTY COMPILE_DEFINITIONS
+    LUA_LIB
+)
+list(APPEND THIRDPART_INC third-party/rapidjson-1.1.0/include)
 set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 #end lua-rapidjson
 
@@ -57,20 +62,28 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 #add_dependencies(xlua emmy_core)
 ##target_link_libraries(xlua PRIVATE emmy_core)
 
-option(EMMY_COMPILE_AS_LIB "EmmyLib" ON)
-option(EMMY_USE_LUA_SOURCE "" OFF)
+set(emmy_SOURCE_DIR "${CMAKE_SOURCE_DIR}/EmmyDebugger")
+option (EMMY_COMPILE_AS_LIB "EmmyLib" ON)
+option (EMMY_USE_LUA_SOURCE "" ON)
 if (USING_LUAJIT)
     set(EMMY_LUA_DIR "luajit")
     add_definitions(-DEMMY_LUA_JIT)
 endif ()
 
 add_subdirectory("EmmyDebugger/third-party/libuv-1.29.0" libuv.out)
-target_sources(emmy_core PUBLIC "")
-set (EMMY_CORE_SRC EmmyDebugger/emmy_core/src/emmy_core.cpp)
-
+set (EMMY_CORE_SRC
+    EmmyDebugger/emmy_core/src/emmy_core.cpp
+)
+set_property(
+    SOURCE ${EMMY_CORE_SRC}
+    APPEND
+    PROPERTY COMPILE_DEFINITIONS
+    EMMY_LUA_JIT
+)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${EMMY_CORE_SRC})
 add_subdirectory("EmmyDebugger/emmy_debugger" emmy_debugger.out)
+list(APPEND THIRDPART_INC EmmyDebugger/include)
 list(APPEND THIRDPART_INC EmmyDebugger/third-party/libuv-1.29.0/include)
-add_dependencies(xlua emmy_debugger)
 #endif EmmyDebugger
 
 if (USING_LUAJIT)
@@ -265,3 +278,7 @@ else ( )
         )
     endif()
 endif ( )
+
+#begin EmmyDebugger
+add_dependencies(xlua emmy_debugger)
+#endif EmmyDebugger
