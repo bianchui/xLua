@@ -38,7 +38,7 @@ if (NOT LUA_VERSION)
 endif()
 
 set(LUA_SRC_PATH lua-${LUA_VERSION}/src)
-set(LUAJIT_SRC_PATH luajit-2.1.0b3/src)
+set(LUAJIT_SRC_PATH LuaJIT/src)
 
 #begin lua-rapidjson
 set (RAPIDJSON_SRC
@@ -61,6 +61,8 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 #add_subdirectory(EmmyDebugger/build_script/xlua_emmy_core)
 #add_dependencies(xlua emmy_core)
 ##target_link_libraries(xlua PRIVATE emmy_core)
+
+if (APPLE AND NOT IOS AND NOT ANDROID)
 
 set(emmy_SOURCE_DIR "${CMAKE_SOURCE_DIR}/EmmyDebugger")
 option (EMMY_COMPILE_AS_LIB "EmmyLib" ON)
@@ -87,7 +89,9 @@ add_subdirectory("EmmyDebugger/emmy_debugger" emmy_debugger.out)
 list(APPEND THIRDPART_INC EmmyDebugger/include)
 list(APPEND THIRDPART_INC EmmyDebugger/third-party/libuv-1.29.0/include)
 
-#endif EmmyDebugger
+endif ()
+
+#end EmmyDebugger
 
 if (USING_LUAJIT)
 	
@@ -294,5 +298,7 @@ else ( )
 endif ( )
 
 #begin EmmyDebugger
+if (APPLE AND NOT IOS AND NOT ANDROID)
 add_dependencies(xlua emmy_debugger)
+endif ()
 #endif EmmyDebugger

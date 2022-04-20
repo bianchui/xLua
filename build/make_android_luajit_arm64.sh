@@ -2,8 +2,10 @@ if [ -z "$ANDROID_NDK" ]; then
     export ANDROID_NDK=~/android-ndk-r15c
 fi
 
+export MACOSX_DEPLOYMENT_TARGET=10.10
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-SRCDIR=$DIR/luajit-2.1.0b3
+SRCDIR=$DIR/LuaJIT
 # ANDROID_NDK=~/android-ndk-r10e
 
 OS=`uname -s`
@@ -26,7 +28,7 @@ make HOST_CC="gcc -m64" CROSS=$NDKP TARGET_SYS=Linux TARGET_FLAGS="$NDKF $NDKARC
 
 cd "$DIR"
 mkdir -p build_lj_v8a && cd build_lj_v8a
-cmake -DUSING_LUAJIT=ON -DANDROID_ABI=arm64-v8a -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN_NAME=arm-linux-androideabi-clang -DANDROID_NATIVE_API_LEVEL=android-21 ../
+cmake -DCMAKE_CXX_STANDARD=11 -DUSING_LUAJIT=ON -DANDROID_ABI=arm64-v8a -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN_NAME=arm-linux-androideabi-clang -DANDROID_NATIVE_API_LEVEL=android-21 ../
 cd "$DIR"
 cmake --build build_lj_v8a --config Release
 mkdir -p plugin_luajit/Plugins/Android/libs/arm64-v8a/
@@ -44,7 +46,7 @@ make HOST_CC="gcc -m32" CROSS=$NDKP TARGET_SYS=Linux TARGET_FLAGS="$NDKF $NDKARC
 
 cd "$DIR"
 mkdir -p build_lj_v7a && cd build_lj_v7a
-cmake -DUSING_LUAJIT=ON -DANDROID_ABI=armeabi-v7a -DCMAKE_TOOLCHAIN_FILE=../cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN_NAME=arm-linux-androideabi-4.9 -DANDROID_NATIVE_API_LEVEL=android-21 ../
+cmake -DCMAKE_CXX_STANDARD=11 -DUSING_LUAJIT=ON -DANDROID_ABI=armeabi-v7a -DCMAKE_TOOLCHAIN_FILE=../cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN_NAME=arm-linux-androideabi-4.9 -DANDROID_NATIVE_API_LEVEL=android-21 ../
 cd "$DIR"
 cmake --build build_lj_v7a --config Release
 mkdir -p plugin_luajit/Plugins/Android/libs/armeabi-v7a/
@@ -60,7 +62,7 @@ make HOST_CC="gcc -m32" CROSS=$NDKP TARGET_SYS=Linux TARGET_FLAGS="$NDKF"
 
 cd "$DIR"
 mkdir -p build_lj_x86 && cd build_lj_x86
-cmake -DUSING_LUAJIT=ON -DANDROID_ABI=x86 -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN_NAME=x86-clang -DANDROID_NATIVE_API_LEVEL=android-21 ../
+cmake -DCMAKE_CXX_STANDARD=11 -DUSING_LUAJIT=ON -DANDROID_ABI=x86 -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN_NAME=x86-clang -DANDROID_NATIVE_API_LEVEL=android-21 ../
 cd "$DIR"
 cmake --build build_lj_x86 --config Release
 mkdir -p plugin_luajit/Plugins/Android/libs/x86/
