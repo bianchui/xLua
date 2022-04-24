@@ -40,6 +40,7 @@ endif()
 set(LUA_SRC_PATH lua-${LUA_VERSION}/src)
 set(LUAJIT_SRC_PATH LuaJIT/src)
 
+if (FALSE)
 #begin lua-rapidjson
 set (RAPIDJSON_SRC
     third-party/lua-rapidjson/src/Document.cpp
@@ -56,6 +57,33 @@ set_property(
 list(APPEND THIRDPART_INC third-party/rapidjson-1.1.0/include)
 set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 #end lua-rapidjson
+endif ()
+
+if (TRUE)
+#begin lua-cjson
+set (LUACJSON_SRC
+    third-party/lua-cjson/lua_cjson.c
+    third-party/lua-cjson/strbuf.c
+    third-party/lua-cjson/fpconv.c
+)
+set_property(
+    SOURCE ${LUACJSON_SRC}
+    APPEND
+    PROPERTY COMPILE_DEFINITIONS
+    LUA_LIB
+)
+if (USING_LUAJIT)
+    set_property(
+        SOURCE ${LUACJSON_SRC}
+        APPEND
+        PROPERTY COMPILE_DEFINITIONS
+        USING_LUAJIT
+    )
+endif ()
+list(APPEND THIRDPART_INC third-party/lua-cjson)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${LUACJSON_SRC})
+#end lua-cjson
+endif ()
 
 #begin EmmyDebugger
 #add_subdirectory(EmmyDebugger/build_script/xlua_emmy_core)
@@ -63,6 +91,7 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 ##target_link_libraries(xlua PRIVATE emmy_core)
 
 if (APPLE AND NOT IOS AND NOT ANDROID)
+list(APPEND THIRDPART_INC third-party/rapidjson-1.1.0/include)
 
 set(emmy_SOURCE_DIR "${CMAKE_SOURCE_DIR}/EmmyDebugger")
 option (EMMY_COMPILE_AS_LIB "EmmyLib" ON)
@@ -81,9 +110,17 @@ set_property(
     APPEND
     PROPERTY COMPILE_DEFINITIONS
     EMMY_USE_LUA_SOURCE
-    EMMY_LUA_JIT
-    EMMY_LUA_JIT_SUPPORT_LUA_SETFUNCS
 )
+if (USING_LUAJIT)
+    set_property(
+        SOURCE ${EMMY_CORE_SRC}
+        APPEND
+        PROPERTY COMPILE_DEFINITIONS
+        EMMY_LUA_JIT
+        EMMY_LUA_JIT_SUPPORT_LUA_SETFUNCS
+    )
+endif ()
+
 set (THIRDPART_SRC ${THIRDPART_SRC} ${EMMY_CORE_SRC})
 add_subdirectory("EmmyDebugger/emmy_debugger" emmy_debugger.out)
 list(APPEND THIRDPART_INC EmmyDebugger/include)

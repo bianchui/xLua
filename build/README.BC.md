@@ -15,7 +15,9 @@
 ## third-party/lua-rapidjson
 - https://github.com/xpol/lua-rapidjson/tree/242b40c8eaceb0cc43bcab88309736461cac1234
 
+## third-party/lua-cjson
 
+- https://github.com/mpx/lua-cjson/tree/e8972ac754788d3ef10a57a36016d6c3e85ba20d
 
 # TODO
 
