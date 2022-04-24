@@ -10,7 +10,7 @@ ISDK=$IXCODE/Platforms/iPhoneOS.platform/Developer
 ISDKVER=iPhoneOS.sdk
 ISDKP=$IXCODE/usr/bin/
 
-if [ ! -e $ISDKP/ar ]; then 
+if [ ! -e $ISDKP/ar ]; then
   sudo cp /usr/bin/ar $ISDKP
 fi
 
