@@ -204,6 +204,7 @@ endif ( )
 set ( XLUA_CORE
     i64lib.c
     xlua.c
+    test_ffi.c
 )
 
 if (NOT USING_LUAJIT)
