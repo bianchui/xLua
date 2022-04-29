@@ -46,3 +46,13 @@ LUA_API void test_ffi_close(VectorHandle* handle) {
         free(handle);
     }
 }
+
+LUA_API void* test_ffi_ptr() {
+    return (void*)(uintptr_t)(0xdeadbeef12345678ll);
+}
+
+LUA_API int test_ffi_ptr2(void* ptr) {
+    uintptr_t num = (uintptr_t)ptr;
+    return num == 0xdeadbeef12345678ll;
+}
+
